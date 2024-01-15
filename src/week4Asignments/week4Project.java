@@ -157,7 +157,9 @@ public class week4Project {
 		
 	
 //
-//7. Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in “Hello” and 3, I expect the method to return “HelloHelloHello”).
+/**7. Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated to itself n number of times. 
+	(i.e. if I pass in “Hello” and 3, I expect the method to return “HelloHelloHello”).
+	*/
 	
 	System.out.println("\n" + "\n" + "******************************************************************************************************" 
 			   + "\n" + "\n");
@@ -363,6 +365,7 @@ public class week4Project {
 			
 			}
 		double avg = (sum / names.length);
+		
 		System.out.println("\n" + "\n");
 		System.out.println('\t' + "The Array of names is " + Arrays.toString(names));
 		System.out.println('\t' + "Total names in the Array is " + names.length);
@@ -464,8 +467,11 @@ public class week4Project {
 		
 		if (isHotOutside == true && moneyInPocket > 10.50) {
 			return true;
-		} else {}
-		return false;
+		} else {
+			
+			return false;
+		}
+		  
 		
 		
 	}
@@ -477,19 +483,19 @@ public class week4Project {
 	public static String  numSuffix(int num) {
 		  
 		
-        
+		// ad rd ending if the number ends in 3 but is not 13
 	       if (num % 10 == 3 && num  !=13){
 	    	  
 	    	   return "rd";
-	    	   
+	    // add nd ending if the number ends in 2 but is not 12 	   
 	       }  else if (num % 10 == 2 && num  != 12) {
 	    	   
 	    	   return "nd";
-	    	   
+	    // add st ending if the number ends in 1 but is not 11    
 	       }  else if (num % 10 == 1 && num  != 11) {
 	    	   
 	    	   return "st";
-	       
+	    // all other numbers will get the th ending    
 	       } else {
 	    	   
 	    	   return "th"; 
