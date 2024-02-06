@@ -92,7 +92,7 @@ public class week4Project {
 				"For the above array called 'names'  names[5] will return the same as names[names.lenght - 1]" + "\n" + "\n");
 		System.out.println("\t" + "System.out.println(names[5]);");
 		System.out.println("\t" + names[5] + "\n");
-		System.out.println("\t" + "System.out.println(names[names.lenght -1]);");
+		System.out.println("\t" + "System.out.println(names[names.length -1]);");
 		System.out.println("\t" + names[names.length -1] + "\n");
 		
 	
@@ -134,7 +134,7 @@ public class week4Project {
 		}
 		
 		System.out.println("\t" + "The names array is " + Arrays.toString(names));
-		System.out.println("\t" + "The nameLengths array is " + Arrays.toString(nameLengths) + "\n");
+		System.out.println("\t" + "The nameLength array is " + Arrays.toString(nameLengths) + "\n");
 		
 		
 //
@@ -322,6 +322,8 @@ public class week4Project {
 
 //	method that programmatically subtract the value of the first element in an array 
 //	from the value in the last element of the array
+	
+	
 //	Question 1
 	public static void firstAndLast(int[] arr){
 		
@@ -354,7 +356,7 @@ public class week4Project {
 		
 	}
 	
-	// Question 2 prints average number of letters per string in a string array 
+	// Question 2a prints average number of letters per string in a string array 
 	
 	public static void avgNumLetters(String[] names) {
 		
@@ -375,7 +377,7 @@ public class week4Project {
 		
 	}
 	
-	// question 6 Concatenates names in a string array separated by spaces 
+	// question 2b Concatenates names in a string array separated by spaces 
 	
 	public static void  concatNames(String[] names) {
 		StringBuilder sb = new StringBuilder();
